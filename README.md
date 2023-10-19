@@ -38,6 +38,9 @@ We trained our BERT-based models using various resources, and we find that VastA
 * Google Cloud Platform (GCP) with 2 V100 GPUs: I'm unsure why the training process on GCP seems extremely slow, it gets stuck for a long periods between steps. After I successfully trained a model, I had to avoid using it due to this issue.
 * Vast AI: Currently, I find that Vast AI offers one of the most effective ways to train models. I've been renting different servers with multiple GPUs (e.g. 4 x 4090) and storing the models on Dropbox.
 
+The initial dataset comprises four prompt questions/texts, and we employed group k-fold cross-validation to train our model.
+<img align="center" alt="group" src="./group_kfold.jpg" />
+
 ## Not Working Ideas
 * Ratio features
 * Text cleaning
